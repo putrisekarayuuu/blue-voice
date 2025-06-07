@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourly - Travel agancy</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header-non-home header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <!-- LOGO -->
+        <a href="#" class="logo">
+          <img src="./assets/images/blue-voice-header-logo-no-motto.png" alt="Blue Voice logo">
+        </a>
+
+        <!-- NAV OPEN BUTTON (HAMBURGER) -->
+        <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn style="color: var(--bright-navy-blue);">
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+        <!-- NAVBAR -->
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+
+            <!-- CLOSE BUTTON -->
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="copy-of-index.html" class="navbar-link-non-home" data-nav-link>Home</a>
+            </li>
+            <li>
+              <a href="dashboard.html" class="navbar-link-non-home" data-nav-link>Dashboard</a>
+            </li>
+            <li>
+              <a href="sentiment.html" class="navbar-link-non-home" data-nav-link>Sentiment Prediction</a>
+            </li>
+            <li>
+              <a href="about-us.html" class="navbar-link-non-home" data-nav-link>About Us</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <article style="padding-top: 2vh;">
+      <section class="popular" style="margin-top: 3vh;">
+        <div class="container">
+            <div class="sentiment-analysis-description">
+                <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+                  <img src="assets/images/ai-robot-2.png" alt="" style="width: 80%; height: auto; max-width: 100%;">
+                </div>
+                <div>
+                    <h2 class="h2" style="text-transform: none; text-align: left; color:var(--bright-navy-blue)">
+                        Sentiment Analysis Algorithm
+                    </h2>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed iusto tempora doloremque magni veniam odit repellendus ratione reprehenderit in, enim eveniet incidunt. Facilis dolores repellat ea eos delectus obcaecati voluptatum?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus voluptatibus eius dolor cupiditate, officia quisquam doloribus maxime aliquam, harum ipsam, assumenda laudantium ratione esse earum repellat voluptatem quae nihil ipsa?
+                    </p>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="aspect-quick-access">
+        <div class="container" style="padding-bottom: 3vh;">
+            <h2 class="h2" style="text-transform: none; text-align: left; color: white;">
+                Aspects Description
+            </h2>
+        </div>
+        <div class="aspect-description-section">
+            <ul class="popular-list" style="grid-template-columns: repeat(5, 1fr); gap: 0px;">
+                <li>
+                <div class="popular-card">
+                    <div class="card-content" style="min-height: 400px; max-height: 100%; overflow-y: auto; z-index: 1;">
+                    <h3 class="h3" style="text-align: center;">
+                      <i class="fa fa-road" aria-hidden="true" style="color: var(--bright-navy-blue); font-size:xx-large; padding-bottom: 10px;"></i>
+                    </h3>
+                    <h3 class="h3 card-title" style="text-align: center; color: var(--bright-navy-blue); padding-bottom: 5px;">
+                      <a href="#">Access</a>
+                    </h3>
+                    <p style="font-size: 12px;">
+                        Aspek ini menekankan pada kemudahan perjalanan dan infrastruktur transportasi yang mendukung mobilitas wisatawan menuju atau antar lokasi wisata. Elemen-elemen yang berkaitan mencakup rambu penunjuk arah, ketersediaan bandara dan terminal, durasi perjalanan, biaya transportasi, serta frekuensi akses ke destinasi wisata.
+                    </p>
+                    </div>
+                </div>
+                </li>
+
+                <li>
+                <div class="popular-card">
+                    <div class="card-content" style="min-height: 400px; max-height: 100%; overflow-y: auto; z-index: 1;">
+                    <h3 class="h3" style="text-align: center;">
+                      <i class="fa fa-binoculars" aria-hidden="true" style="color: var(--bright-navy-blue); font-size:xx-large; padding-bottom: 10px;"></i>
+                    </h3>
+                    <h3 class="h3 card-title" style="text-align: center; color: var(--bright-navy-blue); padding-bottom: 5px;">
+                      <a href="#">Attraction</a>
+                    </h3>
+                    <p style="font-size: 12px;">
+                        Aspek ini berkaitan dengan berbagai hal yang dapat dilihat dan dilakukan oleh wisatawan pada destinasi wisata, seperti pantai dan laut yang menjadi daya tarik utama dalam pariwisata pesisir. Aspek ini juga mencakup penilaian terhadap berbagai kegiatan yang dapat dilakukan di destinasi tersebut, seperti berenang, snorkeling, selancar, dan lain-lain
+                    </p>
+                    </div>
+                </div>
+                </li>
+
+                <li>
+                <div class="popular-card">
+                    <div class="card-content" style="min-height: 400px; max-height: 100%; overflow-y: auto; z-index: 1;">
+                    <h3 class="h3" style="text-align: center;">
+                      <i class="fa fa-faucet" aria-hidden="true" style="color: var(--bright-navy-blue); font-size:xx-large; padding-bottom: 10px;"></i>
+                    </h3>
+                    <h3 class="h3 card-title" style="text-align: center; color: var(--bright-navy-blue); padding-bottom: 5px;">
+                      <a href="#">Amenities</a>
+                    </h3>
+                    <p style="font-size: 12px;">
+                        Aspek ini mencakup penilaian pada berbagai fasilitas dan infrastruktur yang dibutuhkan wisatawan selama berada di destinasi wisata. Hal ini meliputi layanan akomodasi, penyediaan makanan dan minuman, fasilitas pertunjukan, tempat hiburan, serta area perbelanjaan.
+                    </p>
+                    </div>
+                </div>
+                </li>
+
+                <li>
+                <div class="popular-card">
+                    <div class="card-content" style="min-height: 400px; max-height: 100%; overflow-y: auto; z-index: 1;">
+                    <h3 class="h3" style="text-align: center;">
+                      <i class="fas fa-money-bill" aria-hidden="true" style="color: var(--bright-navy-blue); font-size:xx-large; padding-bottom: 10px;"></i>
+                    </h3>
+                    <h3 class="h3 card-title" style="text-align: center; color: var(--bright-navy-blue); padding-bottom: 5px;">
+                      <a href="#">Price</a>
+                    </h3>
+                    <p style="font-size: 12px;">
+                        Aspek Price mencakup nilai suatu barang atau jasa yang dinyatakan dalam bentuk uang. Aspek ini meliputi berbagai biaya yang harus dikeluarkan oleh wisatawan untuk mengakses dan menikmati suatu destinasi wisata, seperti tiket masuk, biaya transportasi, akomodasi, makanan dan minuman, serta biaya untuk mengikuti aktivitas tertentu.
+                    </p>
+                    </div>
+                </div>
+                </li>
+
+                <li>
+                <div class="popular-card">
+                    <div class="card-content" style="min-height: 400px; max-height: 100%; overflow-y: auto; z-index: 1;">
+                    <h3 class="h3" style="text-align: center;">
+                      <i class="fa fa-commenting" aria-hidden="true" style="color: var(--bright-navy-blue); font-size:xx-large; padding-bottom: 10px;"></i>
+                    </h3>
+                    <h3 class="h3 card-title" style="text-align: center; color: var(--bright-navy-blue); padding-bottom: 5px;">
+                      <a href="#">No Aspects</a>
+                    </h3>
+                    <p style="font-size: 12px;">
+                        Aspek ini merujuk pada analisis sentimen yang tidak mengandung unsur dari aspek utama seperti Attractions, Amenities, Access, maupun Price. 
+                    </p>
+                    </div>
+                </div>
+                </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="package" id="package">
+        <div class="container">
+          <h2 class="h2 section-title">Please enter your review in the field below</h2>
+          <br>
+
+          <div class="sentiment-prediction-tab">
+            <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+              <img src="assets/images/beach-grid.png" alt="" style="width: 100%; height: auto; max-width: 100%;">
+            </div>
+
+          <div class="sentiment-form-container">
+            <h3 class="sentiment-title">Input Sentiment for Prediction</h3>
+            <textarea id="sentimentInput" rows="4" class="sentiment-textarea" placeholder="Write a sentiment here..."></textarea>
+            <div class="btn-group">
+              <button onclick="showSentimentResult()" class="btn btn-primary">Analyze Sentiment</button>
+            </div>
+          </div>
+
+
+
+          <div id="sentimentModal" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.5); justify-content: center; align-items: center; z-index: 999;">
+            <div style="background: white; padding: 30px; border-radius: 8px; max-width: 500px; width: 90%;">
+              <h4>Sentiment Analysis Result</h4>
+              <p><strong>Input Sentence:</strong></p>
+              <p id="resultSentence" style="font-style: italic;"></p>
+              <hr>
+              <p><strong>Aspects:</strong></p>
+              <ul id="aspectList">
+                <li>Access: <em>Positive</em></li>
+                <li>Attraction: <em>Neutral</em></li>
+                <li>Amenities: <em>Positive</em></li>
+                <li>Price: <em>Negative</em></li>
+                <li>No Aspects: <em>Positive</em></li>
+              </ul>
+              <button onclick="closeModal()" style="margin-top: 10px; padding: 8px 16px;">Close</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" alt="Tourly logo">
+          </a>
+
+          <p class="footer-text">
+            Urna ratione ante harum provident, eleifend, vulputate molestiae proin fringilla, praesentium magna conubia
+            at
+            perferendis, pretium, aenean aut ultrices.
+          </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+          <h4 class="contact-title">Contact Us</h4>
+
+          <p class="contact-text">
+            Feel free to contact and reach us !!
+          </p>
+
+          <ul>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+
+              <a href="tel:+01123456790" class="contact-link">+01 (123) 4567 90</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <a href="mailto:info.tourly.com" class="contact-link">info.tourly.com</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+
+              <address>3146 Koontz, California</address>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-form">
+
+          <p class="form-text">
+            Subscribe our newsletter for more update & news !!
+          </p>
+
+          <form action="" class="form-wrapper">
+            <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+
+            <button type="submit" class="btn btn-secondary">Subscribe</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2022 <a href="">codewithsadee</a>. All rights reserved
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Term & Condition</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">FAQ</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
