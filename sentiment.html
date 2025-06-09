@@ -96,8 +96,9 @@
                     </h2>
                     <br>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed iusto tempora doloremque magni veniam odit repellendus ratione reprehenderit in, enim eveniet incidunt. Facilis dolores repellat ea eos delectus obcaecati voluptatum?
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus voluptatibus eius dolor cupiditate, officia quisquam doloribus maxime aliquam, harum ipsam, assumenda laudantium ratione esse earum repellat voluptatem quae nihil ipsa?
+                        Sentiment data was collected through web scraping from online platforms, specifically Google Maps and Tripadvisor, focusing on two tourist destinations: Sanur Beach and Losari Beach. 
+                        All reviews were manually labeled based on five aspects—attractions, amenities, access, price, and no aspect—and classified into three sentiment categories: positive, neutral, and negative. 
+                        To build and compare sentiment classification models, two machine learning algorithms were employed: Random Forest and Neural Network. In addition, topic modeling was conducted using the Latent Dirichlet Allocation (LDA) method to identify the main themes present in user reviews.
                     </p>
                 </div>
             </div>
@@ -205,30 +206,29 @@
             </div>
 
           <div class="sentiment-form-container">
-            <h3 class="sentiment-title">Input Sentiment for Prediction</h3>
+            <h3 class="sentiment-title h3" style="text-align: center; color: var(--bright-navy-blue);">Input Sentiment for Prediction</h3>
             <textarea id="sentimentInput" rows="4" class="sentiment-textarea" placeholder="Write a sentiment here..."></textarea>
             <div class="btn-group">
               <button onclick="showSentimentResult()" class="btn btn-primary">Analyze Sentiment</button>
             </div>
           </div>
 
-
-
           <div id="sentimentModal" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.5); justify-content: center; align-items: center; z-index: 999;">
             <div style="background: white; padding: 30px; border-radius: 8px; max-width: 500px; width: 90%;">
-              <h4>Sentiment Analysis Result</h4>
-              <p><strong>Input Sentence:</strong></p>
+              <h3 style="text-align: center; padding: 8px 0px; color: var(--bright-navy-blue);">SENTIMENT ANALYSIS RESULT</h3>
+              <p><strong>Input Sentence</strong></p>
               <p id="resultSentence" style="font-style: italic;"></p>
               <hr>
-              <p><strong>Aspects:</strong></p>
+              <br>
+              <p><strong>Aspects</strong></p>
               <ul id="aspectList">
-                <li>Access: <em>Positive</em></li>
-                <li>Attraction: <em>Neutral</em></li>
-                <li>Amenities: <em>Positive</em></li>
-                <li>Price: <em>Negative</em></li>
-                <li>No Aspects: <em>Positive</em></li>
+                <li>Access&emsp;&emsp;&ensp;&ensp;:&ensp; <em>Positive</em></li>
+                <li>Attraction&emsp;&ensp;:&ensp; <em>Neutral</em></li>
+                <li>Amenities&emsp;&ensp;:&ensp; <em>Positive</em></li>
+                <li>Price&emsp;&emsp;&emsp;&ensp;&ensp;:&ensp; <em>Negative</em></li>
+                <li>No Aspects&nbsp;&nbsp;&nbsp;:&ensp; <em>Positive</em></li>
               </ul>
-              <button onclick="closeModal()" style="margin-top: 10px; padding: 8px 16px;">Close</button>
+              <button onclick="closeModal()" style="margin-top: 10px; padding: 8px 16px;" class="btn btn-primary">Close</button>
             </div>
           </div>
         </div>
@@ -351,6 +351,8 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/sentiment-chart.js"></script>
+
 
   <!-- 
     - ionicon link

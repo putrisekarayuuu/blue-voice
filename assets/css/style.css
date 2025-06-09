@@ -1029,7 +1029,22 @@ address {
 
   .popular-card .card-content { right: auto; }
 
+  .sentiment-textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    font-size: 16px;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
 
+  .sentiment-title {
+    margin-top: 20px;
+  }
 
   /**
    * FOOTER
@@ -1350,6 +1365,7 @@ address {
     font-size: 16px;
     font-family: inherit;
     transition: border-color 0.3s ease;
+    margin-bottom: 15px;
   }
 
   .sentiment-textarea:focus {

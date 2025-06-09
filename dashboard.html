@@ -2,47 +2,35 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tourly - Travel agancy</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tourly - Travel agency</title>
 
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
 
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!-- 
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+    rel="stylesheet"
+  />
 </head>
 
 <body id="top">
-
-  <!-- 
-    - #HEADER
-  -->
-
+  <!-- HEADER -->
   <header class="header-non-home header" data-header>
-
     <div class="overlay" data-overlay></div>
-
     <div class="header-bottom">
       <div class="container">
-
         <!-- LOGO -->
         <a href="#" class="logo">
-          <img src="./assets/images/blue-voice-header-logo-no-motto.png" alt="Blue Voice logo">
+          <img src="./assets/images/blue-voice-header-logo-no-motto.png" alt="Blue Voice logo" />
         </a>
 
         <!-- NAV OPEN BUTTON (HAMBURGER) -->
@@ -53,30 +41,19 @@
         <!-- NAVBAR -->
         <nav class="navbar" data-navbar>
           <div class="navbar-top">
-
             <!-- CLOSE BUTTON -->
             <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
               <ion-icon name="close-outline"></ion-icon>
             </button>
-
           </div>
 
           <ul class="navbar-list">
-            <li>
-              <a href="copy-of-index.html" class="navbar-link-non-home" data-nav-link>Home</a>
-            </li>
-            <li>
-              <a href="dashboard.html" class="navbar-link-non-home" data-nav-link>Dashboard</a>
-            </li>
-            <li>
-              <a href="sentiment.html" class="navbar-link-non-home" data-nav-link>Sentiment Prediction</a>
-            </li>
-            <li>
-              <a href="about-us.html" class="navbar-link-non-home" data-nav-link>About Us</a>
-            </li>
+            <li><a href="copy-of-index.html" class="navbar-link-non-home" data-nav-link>Home</a></li>
+            <li><a href="dashboard.html" class="navbar-link-non-home" data-nav-link>Dashboard</a></li>
+            <li><a href="sentiment.html" class="navbar-link-non-home" data-nav-link>Sentiment Prediction</a></li>
+            <li><a href="about-us.html" class="navbar-link-non-home" data-nav-link>About Us</a></li>
           </ul>
         </nav>
-
       </div>
     </div>
   </header>
@@ -85,247 +62,121 @@
     <article style="padding-top: 2vh;">
       <section class="popular" style="margin-top: 3vh;">
         <div class="container">
-            <div class="sentiment-analysis-description">
-                <div>
-                    <img src="assets/images/ai-robot-2.png" alt="" style="width: 70vh;">
-                </div>
-                <div>
-                    <h2 class="h2" style="text-transform: none; text-align: left; color:var(--bright-navy-blue)">
-                        Sentiment Analysis Algorithm
-                    </h2>
-                    <br>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed iusto tempora doloremque magni veniam odit repellendus ratione reprehenderit in, enim eveniet incidunt. Facilis dolores repellat ea eos delectus obcaecati voluptatum?
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus voluptatibus eius dolor cupiditate, officia quisquam doloribus maxime aliquam, harum ipsam, assumenda laudantium ratione esse earum repellat voluptatem quae nihil ipsa?
-                    </p>
-                </div>
-            </div>
-        </div>
-      </section>
-      <section class="aspect-quick-access">
-        <div class="container" style="padding-bottom: 3vh;">
-            <h2 class="h2" style="text-transform: none; text-align: left; color: white;">
-                Aspects Description
+          <div class="dashboard">
+            <h2 class="h2 section-title" style="color: var(--bright-navy-blue);">
+              Sentiment Analysis Result Dashboard
             </h2>
-        </div>
-        <div class="aspect-description-section">
-            <ul class="popular-list">
-                <li>
-                <div class="popular-card">
 
-                    <div class="card-content">
-                    <p class="card-subtitle">
-                        <a href="#">I Bagus Putu Swadarnasuta</a>
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio cum porro at excepturi illum labore accusantium perspiciatis, illo nemo. Atque voluptatum non quibusdam excepturi, iusto voluptatem exercitationem. Facere, eius voluptate?
-                    </p>
+            <div
+              style="
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                gap: 2rem;
+                align-items: center;
+                margin-top: 2rem;
+              "
+            >
+              <!-- Left side: Title and image -->
+              <div>
+                <h3 id="aspectTitle" style="color: var(--bright-navy-blue); font-weight: 600;">Aspect: Attractions</h3>
+                <img
+                  id="aspectImage"
+                  src="./assets/images/ai-robot-2.png"
+                  alt="Aspect Image"
+                  style="width: 100%; max-width: 300px; border-radius: 12px"
+                />
+              </div>
 
-                    <h3 class="h3 card-title">
-                        <a href="#">Agus</a>
-                    </h3>
-
-                    <p class="card-text">
-                        Project Leader
-                    </p>
-
-                    </div>
-
-                </div>
-                </li>
-
-                <li>
-                <div class="popular-card">
-
-                    <div class="card-content">
-
-                    <p class="card-subtitle">
-                        <a href="#">Naufal Fadli Muzakki</a>
-                    </p>
-
-                    <h3 class="h3 card-title">
-                        <a href="#">Zakki</a>
-                    </h3>
-
-                    <p class="card-text">
-                        Team Member
-                    </p>
-
-                    </div>
-
-                </div>
-                </li>
-
-                <li>
-                <div class="popular-card">
-
-                    <div class="card-content">
-
-                    <p class="card-subtitle">
-                        <a href="#">Astri Nur Innayah</a>
-                    </p>
-
-                    <h3 class="h3 card-title">
-                        <a href="#">Astri</a>
-                    </h3>
-
-                    <p class="card-text">
-                        Team Member
-                    </p>
-
-                    </div>
-
-                </div>
-                </li>
-
-                <li>
-                <div class="popular-card">
-                    <div class="card-content">
-
-                    <p class="card-subtitle">
-                        <a href="#">Putri Sekar Ayu</a>
-                    </p>
-
-                    <h3 class="h3 card-title">
-                        <a href="#">Sekar</a>
-                    </h3>
-
-                    <p class="card-text">
-                        Team Member
-                    </p>
-
-                    </div>
-
-                </div>
-                </li>
-          </ul>
+              <!-- Right side: Dropdown + Chart -->
+              <div>
+                <label for="aspectSelect" style="font-weight: 500;">Select Aspect:</label>
+                <select id="aspectSelect" onchange="updateChart()" style="margin-bottom: 1rem; padding: 0.5rem;">
+                  <option value="Attractions">Attractions</option>
+                  <option value="Amenities">Amenities</option>
+                  <option value="Access">Access</option>
+                  <option value="Price">Price</option>
+                  <option value="No Aspect">No Aspect</option>
+                </select>
+                <canvas id="sentimentChart" width="400" height="250"></canvas>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </article>
   </main>
 
-  <!-- 
-    - #FOOTER
-  -->
-
+  <!-- FOOTER -->
   <footer class="footer">
-
     <div class="footer-top">
       <div class="container">
-
         <div class="footer-brand">
-
           <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" alt="Tourly logo">
+            <img src="./assets/images/logo.svg" alt="Tourly logo" />
           </a>
-
           <p class="footer-text">
-            Urna ratione ante harum provident, eleifend, vulputate molestiae proin fringilla, praesentium magna conubia
-            at
+            Urna ratione ante harum provident, eleifend, vulputate molestiae proin fringilla, praesentium magna conubia at
             perferendis, pretium, aenean aut ultrices.
           </p>
-
         </div>
 
         <div class="footer-contact">
-
           <h4 class="contact-title">Contact Us</h4>
-
-          <p class="contact-text">
-            Feel free to contact and reach us !!
-          </p>
-
+          <p class="contact-text">Feel free to contact and reach us !!</p>
           <ul>
-
             <li class="contact-item">
               <ion-icon name="call-outline"></ion-icon>
-
               <a href="tel:+01123456790" class="contact-link">+01 (123) 4567 90</a>
             </li>
-
             <li class="contact-item">
               <ion-icon name="mail-outline"></ion-icon>
-
               <a href="mailto:info.tourly.com" class="contact-link">info.tourly.com</a>
             </li>
-
             <li class="contact-item">
               <ion-icon name="location-outline"></ion-icon>
-
               <address>3146 Koontz, California</address>
             </li>
-
           </ul>
-
         </div>
 
         <div class="footer-form">
-
-          <p class="form-text">
-            Subscribe our newsletter for more update & news !!
-          </p>
-
+          <p class="form-text">Subscribe our newsletter for more update & news !!</p>
           <form action="" class="form-wrapper">
-            <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
-
+            <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required />
             <button type="submit" class="btn btn-secondary">Subscribe</button>
           </form>
-
         </div>
-
       </div>
     </div>
 
     <div class="footer-bottom">
       <div class="container">
-
         <p class="copyright">
           &copy; 2022 <a href="">codewithsadee</a>. All rights reserved
         </p>
-
         <ul class="footer-bottom-list">
-
-          <li>
-            <a href="#" class="footer-bottom-link">Privacy Policy</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-bottom-link">Term & Condition</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-bottom-link">FAQ</a>
-          </li>
-
+          <li><a href="#" class="footer-bottom-link">Privacy Policy</a></li>
+          <li><a href="#" class="footer-bottom-link">Term & Condition</a></li>
+          <li><a href="#" class="footer-bottom-link">FAQ</a></li>
         </ul>
-
       </div>
     </div>
-
   </footer>
 
-
-  <!-- 
-    - #GO TO TOP
-  -->
-
+  <!-- GO TO TOP -->
   <a href="#top" class="go-top" data-go-top>
     <ion-icon name="chevron-up-outline"></ion-icon>
   </a>
 
-
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <!-- ionicon scripts -->
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
+   <!-- sentiment chart script -->
+  <script src="./assets/js/sentiment-chart.js"></script>
 </body>
-
 </html>
