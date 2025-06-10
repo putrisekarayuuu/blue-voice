@@ -158,6 +158,15 @@ body { background: var(--white); }
 
 .btn-secondary:is(:hover, :focus) { background: hsla(0, 0%, 100%, 0.1); }
 
+.dropdown-btn {
+  background: var(--white);
+  border-color: var(--bright-navy-blue);
+  color: var(--bright-navy-blue);
+  font-size: var(--fs-6);
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
 .h1,
 .h2,
 .h3 {
@@ -508,9 +517,53 @@ body { background: var(--white); }
   margin-top: 35px;
 }
 
+.chart-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 1000px;
 
+  /* Responsive height */
+  min-height: 60vh;      /* Tidak terlalu kecil di layar pendek */
+  max-height: 90vh;      /* Supaya tidak terlalu tinggi di layar besar */
+  overflow-y: auto;      /* Scroll jika kontennya melebihi batas */
+}
 
+.wordcloud-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
 
+.wordcloud-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.wordcloud-column {
+  flex: 1 1 48%;
+  text-align: center;
+}
+
+.project-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin-top: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
 
 /*-----------------------------------*\
  * #POPULAR

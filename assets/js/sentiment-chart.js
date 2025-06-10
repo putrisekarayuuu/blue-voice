@@ -1,4 +1,5 @@
   const chartData = {
+    "All Aspects": { "labels": ["negative", "neutral", "positive"],"data": [654, 933, 3846]},
     "Attractions": { "labels": ["negative", "neutral", "positive"], "data": [309, 216, 2218] },
     "Amenities": { "labels": ["negative", "neutral", "positive"], "data": [227, 154, 916] },
     "Access": { "labels": ["negative", "neutral", "positive"], "data": [34, 32, 191] },
@@ -6,16 +7,8 @@
     "No Aspect": { "labels": ["negative", "neutral", "positive"], "data": [57, 513, 348] }
   };
 
-  const aspectImages = {
-    "Attractions": "./assets/images/aspect/attractions.png",
-    "Amenities": "./assets/images/aspect/amenities.png",
-    "Access": "./assets/images/aspect/access.png",
-    "Price": "./assets/images/aspect/price.png",
-    "No Aspect": "./assets/images/aspect/noaspect.png"
-  };
-
   const ctx = document.getElementById('sentimentChart').getContext('2d');
-  let currentAspect = 'Attractions';
+  let currentAspect = 'All Aspects';
 
   function getColorSet(data) {
     const maxIndex = data.indexOf(Math.max(...data));
@@ -74,3 +67,23 @@
     document.getElementById('aspectTitle').innerText = "Aspect: " + selectedAspect;
     document.getElementById('aspectImage').src = aspectImages[selectedAspect];
   }
+
+  function updateWordCloud() {
+    const aspect = document.getElementById("aspectSelectCloud").value;
+    const prefix = aspect === "All Aspects" ? "all" : aspect.toLowerCase().replace(/\s+/g, "-");
+
+    // Ganti gambar wordcloud
+    document.getElementById("wordcloudPositive").src = `./assets/images/wordcloud/wordcloud-positive-${prefix}.png`;
+    document.getElementById("wordcloudNegative").src = `./assets/images/wordcloud/wordcloud-negative-${prefix}.png`;
+
+    // Update judul dengan format "[Aspect] Aspects Positive/Negative Wordcloud"
+    const displayAspect = aspect === "All Aspects" ? "All" : aspect;
+    document.getElementById("wordcloudPositiveTitle").innerText = `${displayAspect} Aspects Positive Wordcloud`;
+    document.getElementById("wordcloudNegativeTitle").innerText = `${displayAspect} Aspects Negative Wordcloud`;
+  }
+
+
+  // Jalankan otomatis saat halaman selesai dimuat
+  window.addEventListener("DOMContentLoaded", () => {
+    updateWordCloud();
+  });
